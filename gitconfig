@@ -1,0 +1,10 @@
+[user]
+	name = Yanal Issac
+	email = issac.yanal@gmail.com
+[color]
+	status = auto
+	branch = auto
+	ui = true
+[core]
+	excludefile = ~/.gitignore
+	editor = vim
