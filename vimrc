@@ -65,8 +65,9 @@ syntax on		    " text highlighting
 " Text, Tab and Indent Related
 " -------------------------------------------------------------------------------------------------------------------------------
 
-set smartindent		" context sensitive autoindent
 set autoindent		" auto indenting on
+set smartindent		" context sensitive autoindent
+set cindent         " enables automatic C program indent
 
 set tabstop=4
 set shiftwidth=4
@@ -115,17 +116,17 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 inoremap jk <ESC>
 inoremap kj <ESC>
 
-" nnoremap <C-W> h :H
-
-
 nnoremap <leader>nt :NERDTree<CR>
 autocmd vimenter * NERDTree
 
-vnoremap <leader>s :sort<CR>        " sort lines
-vnoremap < <gv " better indentation " indent and keep highlighting
-vnoremap > >gv " better indentation " indent and keep highlighting
+vnoremap <leader>s :sort<CR>            " sort lines
+vnoremap < <gv " better indentation     " indent and keep highlighting
+vnoremap > >gv " better indentation     " indent and keep highlighting
 
 " Remove highlighting from last search
 nnoremap <C-n> :nohl<CR>
 
 nmap <leader>v :tabedit $MYVIMRC<CR>    " open vimrc file for editing
+
+
+
