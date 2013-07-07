@@ -116,8 +116,9 @@ fi
 
 
 # My added part
-PATH=~/bin:"${PATH}"
-set -o vi
+
+PATH=~/bin:"${PATH}"            # Add bin to Path 
+set -o vi                       # Vim keystrokes for command line editing 
 EDITOR=vim
 export EDITOR
 
